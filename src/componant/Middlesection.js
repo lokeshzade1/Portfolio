@@ -1,11 +1,11 @@
 const MiddleSection = () => {
   return (
     <>
-      <div className=' w-full h-screen flex  items-center bg-stone-900 md:justify-between flex-wrap gap-0 mt-8 md:mt-0'>
-        <div className='h-60 w-60 border-[0.5px] border-red-200  shadow-md rounded-full md:ml-8 overflow-hidden  md:block m-auto min-h-36 min-w-36 hidden'>
+      <div className=' w-full h-screen flex  items-center bg-stone-900 md:justify-between flex-wrap gap-0 mt-8 md:mt-0 pt-8'>
+        <div className='h-60 w-60 border-[0.5px] border-red-200  shadow-md rounded-full md:ml-8 overflow-hidden  md:block m-auto min-h-36 min-w-36 hidden ring-2 ring-offset-1 ring-yellow-300'>
           <img
             src={require('./images/Snapchat-1630096252.jpg')}
-            className='w-full h-full'
+            className='h-60 w-60'
           ></img>
         </div>
         <div className='text-white flex-1 mx-8'>
@@ -23,7 +23,7 @@ const MiddleSection = () => {
             </p>
           </div>
           <div className='flex justify-center items-center md:flex md:justify-start'>
-            <button className='rounded py-2 bg-orange-500 font-bold text-[8px] mt-2 px-2 hover:bg-green-500'>
+            <button className='rounded py-2 bg-orange-500 font-bold md:text-[8px] mt-2 px-2 hover:bg-green-500'>
               More About me
             </button>
             <span className='flex items-end ml-2 first-letter:bg-red-500'>
