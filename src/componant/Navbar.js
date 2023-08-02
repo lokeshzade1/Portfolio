@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PhoneBlock from './Phoneblock';
+import { VscSettings } from 'react-icons/vsc';
 
 function Navbar(props) {
   const [shoNo, setShowNo] = useState(false);
@@ -29,6 +30,9 @@ function Navbar(props) {
               {shoNo ? <PhoneBlock /> : null}
             </li>
           </ul>
+        </div>
+        <div className='flex text-3xl justify-center items-center md:hidden'>
+          <VscSettings />
         </div>
       </nav>
     </>
