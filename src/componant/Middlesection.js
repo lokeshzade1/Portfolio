@@ -94,7 +94,7 @@ const MiddleSection = () => {
             <FaTwitterSquare />
           </div>
         </div>
-        <footer className='flex w-full md:hidden'>
+        {/* <footer className='flex w-full md:hidden'>
           <div className='w-full bg-stone-900 flex justify-center items-center md:py-0  text-xl md:text-[10px]    '>
             <h1 className='md:text-[10px] font-bold text-yellow-400  '>
               @{date.getFullYear()} Made with
@@ -102,7 +102,7 @@ const MiddleSection = () => {
             <PiHeartStraightFill className='text-red-500 ml-1 ' />
             <GiClover className='text-red-500 ml-1' />
           </div>
-        </footer>
+        </footer> */}
       </div>
     </>
   );
