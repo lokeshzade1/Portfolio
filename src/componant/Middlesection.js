@@ -12,7 +12,7 @@ const MiddleSection = () => {
   console.log(date.getFullYear());
   return (
     <>
-      <div className=' w-full md:h-screen  flex  items-center bg-stone-900 md:justify-between flex-wrap md:mt-0 md:pt-14 h-screen flex-col justify-between md:flex-row gap-40'>
+      <div className=' w-full h-screen  flex  items-center bg-stone-900 md:justify-between flex-wrap md:mt-0 md:pt-14  flex-col justify-between md:flex-row gap-40'>
         <nav className='w-full p-2  flex justify-end md:justify-between bg-stone-900 md:fixed top-0 text-white text-[10px] border-b-orange-400 border-b-[1px] shadow shadow-orange-400 md:hidden'>
           <div className='flex text-3xl justify-center items-center md:hidden'>
             <VscSettings />
@@ -95,7 +95,7 @@ const MiddleSection = () => {
           </div>
         </div>
         <footer className='flex w-full md:hidden'>
-          <div className='flex-1 bg-stone-900 flex justify-center items-center md:py-0  text-xl md:text-[10px]    '>
+          <div className='w-full bg-stone-900 flex justify-center items-center md:py-0  text-xl md:text-[10px]    '>
             <h1 className='md:text-[10px] font-bold text-yellow-400  '>
               @{date.getFullYear()} Made with
             </h1>
