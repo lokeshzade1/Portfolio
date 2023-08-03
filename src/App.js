@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 import Navbar from './componant/Navbar';
 import Footer from './componant/Footer';
 import Model from './componant/Model';
 import { useState } from 'react';
-import PhoneBlock from './componant/Phoneblock';
+
 import MiddleSection from './componant/Middlesection';
+import { Route, Routes, BrowserRouter, Router } from 'react-router-dom';
+import Skill from './componant/Skills';
+import Main from './componant/Mainpage';
 function App() {
   const [show, setShow] = useState(false);
   const showEvent = () => {
@@ -13,11 +14,16 @@ function App() {
   };
   return (
     <>
-      <Navbar show={showEvent} />
+      {/* <Navbar show={showEvent} />
       <MiddleSection />
       <Footer />
       {show ? <Model show={showEvent} /> : null}
-      {/* <PhoneBlock /> */}
+      <PhoneBlock /> */}
+
+      <Routes>
+        <Route exact path='/Skills' element={<Skill />}></Route>
+        <Route exact path='/' element={<Main />}></Route>
+      </Routes>
     </>
   );
 }

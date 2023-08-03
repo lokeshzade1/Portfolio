@@ -7,15 +7,21 @@ import { PiHeartStraightFill } from 'react-icons/pi';
 import { GrReactjs } from 'react-icons/gr';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { VscSettings } from 'react-icons/vsc';
+import Drawer from './Drawer';
+import { useState } from 'react';
 const MiddleSection = () => {
   const date = new Date();
   console.log(date.getFullYear());
+  const [open, setOpen] = useState(false);
+  const openDrawer = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <div className=' w-full h-screen  flex  items-center bg-stone-900 md:justify-between flex-wrap md:mt-0 md:pt-14  flex-col justify-between md:flex-row gap-40'>
         <nav className='w-full p-2  flex justify-end md:justify-between bg-stone-900 md:fixed top-0 text-white text-[10px] border-b-orange-400 border-b-[1px] shadow shadow-orange-400 md:hidden'>
           <div className='flex text-3xl justify-center items-center md:hidden'>
-            <VscSettings />
+            <VscSettings onClick={openDrawer} />
           </div>
         </nav>
         <div className='h-96 w-96 border-[0.5px] border-red-200  shadow-md rounded-full md:ml-8 overflow-hidden  md:block m-auto min-h-36 min-w-36 hidden ring-2 ring-offset-1 ring-yellow-300'>
@@ -88,10 +94,19 @@ const MiddleSection = () => {
             </button>
           </div>
           <div className='md:py-2 flex md:gap-3  gap-2 md:justify-end justify-center text-3xl pt-6 md:text-4xl md:mt-4'>
-            <BsInstagram />
+            <a href='https://www.instagram.com/zadelokesh1/'>
+              {' '}
+              <BsInstagram />
+            </a>
             <ImFacebook />
-            <FaGithub />
-            <FaTwitterSquare />
+            <a href='https://github.com/lokeshzade1'>
+              <FaGithub />
+            </a>
+
+            <a href='https://twitter.com/i/flow/login'>
+              {' '}
+              <FaTwitterSquare />
+            </a>
           </div>
         </div>
         {/* <div className='flex w-full md:hidden'>
@@ -104,6 +119,7 @@ const MiddleSection = () => {
           </div>
         </div> */}
       </div>
+      {open ? <Drawer openDrawer={openDrawer} /> : null}
     </>
   );
 };
