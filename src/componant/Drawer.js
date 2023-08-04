@@ -33,11 +33,11 @@ function Drawer(props) {
               {' '}
               <li className='animate-pulse'>Skills</li>
             </Link>
-            <Link to='/Skills'>
+            <Link to='/Project'>
               {' '}
               <li className='animate-pulse'>Project</li>
             </Link>
-            <Link to='Skills'>
+            <Link to='/'>
               <li className='animate-pulse'>About</li>
             </Link>
           </ul>

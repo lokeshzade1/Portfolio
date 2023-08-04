@@ -13,7 +13,9 @@ const Project = () => {
     <>
       <div className=' w-full flex justify-center items-center text-4xl text-bold bg-stone-900 flex-col gap-3 pt-8'>
         <div>
-          <h1 className='text-6xl font-bold text-orange-500'>Project</h1>
+          <h1 className='md:text-6xl text-4xl font-bold text-orange-500'>
+            Project
+          </h1>
         </div>
         <div className='bg-stone-600 p-4 text-4xl text-yellow-300 font-semibold rounded flex  gap-4 flex-col w-full flex-wrap'>
           <div className='bg-black h-64  p-4 rounded flex  justify-center items-center border-[0.5px] border-orange-500 hover:bg-white hover:text-amber-800 hover:scale-105 gap-4 flex-col'>
