@@ -20,11 +20,11 @@ function Navbar(props) {
                   props.show();
                 }}
               >
-                Project
+                Skills
               </li>
             </Link>
             <Link to='/Project'>
-              <li className='cursor-pointer'>Skills </li>
+              <li className='cursor-pointer'>Project </li>
             </Link>
             <li
               className='relative cursor-pointer'
