@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PhoneBlock from './Phoneblock';
 import { VscSettings } from 'react-icons/vsc';
-
+import { Link } from 'react-router-dom';
 function Navbar(props) {
   const [shoNo, setShowNo] = useState(false);
   return (
@@ -12,14 +12,18 @@ function Navbar(props) {
         </div>
         <div className='- from-neutral-950  justify-center items-center mr-14 hidden md:flex text-xl'>
           <ul className='flex gap-6'>
-            <li
-              onClick={() => {
-                props.show();
-              }}
-            >
-              Skills
-            </li>
-            <li>Project </li>
+            <Link to='/Skills'>
+              {' '}
+              <li
+                className='cursor-pointer'
+                onClick={() => {
+                  props.show();
+                }}
+              >
+                Skills
+              </li>
+            </Link>
+            <li className='cursor-pointer'>Project </li>
             <li
               className='relative cursor-pointer'
               onClick={() => {
