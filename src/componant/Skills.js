@@ -11,100 +11,35 @@ import { SiExpress } from 'react-icons/si';
 const Skill = () => {
   return (
     <>
-      <div className=' w-full flex justify-center items-center text-4xl text-bold bg-stone-900 flex-col gap-3 pt-8'>
-        <div>
-          <h1 className='text-6xl font-bold text-orange-500'>Project</h1>
-        </div>
-        <div className='bg-stone-600 p-4 text-4xl text-yellow-300 font-semibold rounded flex  gap-4 flex-col w-full flex-wrap'>
-          <div className='bg-black h-64  p-4 rounded flex  justify-center items-center border-[0.5px] border-orange-500 hover:bg-white hover:text-amber-800 hover:scale-105 gap-4 flex-col'>
-            {' '}
-            <div className='text-orange-600'>
-              {' '}
-              <h1>Laundary Service App </h1>
-            </div>
-            <div className=' md:flex  items-center'>
-              <h1 className='text-xl'>Technologies used :</h1>
-              <div className='flex gap-2 flex-wrap mt-2 md:mt-0'>
-                <FaNodeJs className='text-green-700' />
-                <BiLogoJavascript className='text-yellow-400' />
-                <SiTailwindcss className='text-blue-700' />
-                <FaGithub className='text-black bg-white' />
-                <SiMongodb className='text-green-700' />
-                <SiMongoose className='text-red-700' />
-                <TbBrandReactNative className='text-blue-400' />
-                <TfiHtml5 />
-                <SiExpress />
-              </div>
-            </div>
-          </div>
-
-          <div className='bg-black h-64  p-4 rounded flex  justify-center items-center border-[0.5px] border-orange-500 hover:bg-white hover:text-amber-800 hover:scale-105 gap-4 flex-col'>
-            {' '}
-            <div className='text-orange-600'>
-              {' '}
-              <h1>Hotel booking website of swagstay </h1>
-            </div>
-            <div className=' md:flex  items-center'>
-              <h1 className='text-xl'>Technologies used :</h1>
-              <div className='flex gap-2 flex-wrap mt-2 md:mt-0'>
-                <FaNodeJs className='text-green-700' />
-                <BiLogoJavascript className='text-yellow-400' />
-                <SiTailwindcss className='text-blue-700' />
-                <FaGithub className='text-black bg-white' />
-                <SiMongodb className='text-green-700' />
-                <SiMongoose className='text-red-700' />
-                <TbBrandReactNative className='text-blue-400' />
-                <TfiHtml5 />
-                <SiExpress />
-              </div>
-            </div>
-          </div>
-          <div className='bg-black h-64  p-4 rounded flex  justify-center items-center border-[0.5px] border-orange-500 hover:bg-white hover:text-amber-800 hover:scale-105 gap-4 flex-col'>
-            {' '}
-            <div className='text-orange-600'>
-              {' '}
-              <h1>React native app of User login </h1>
-            </div>
-            <div className=' md:flex  items-center'>
-              <h1 className='text-xl'>Technologies used :</h1>
-              <div className='flex gap-2 flex-wrap mt-2 md:mt-0'>
-                <FaNodeJs className='text-green-700' />
-                <BiLogoJavascript className='text-yellow-400' />
-                <SiTailwindcss className='text-blue-700' />
-                <FaGithub className='text-black bg-white' />
-                <SiMongodb className='text-green-700' />
-                <SiMongoose className='text-red-700' />
-                <TbBrandReactNative className='text-blue-400' />
-                <TfiHtml5 />
-                <SiExpress />
-              </div>
-            </div>
-          </div>
-          <div className='bg-black h-64  p-4 rounded flex  justify-center items-center border-[0.5px] border-orange-500 hover:bg-white hover:text-amber-800 hover:scale-105 gap-4 flex-col'>
-            {' '}
-            <div className='text-orange-600'>
-              {' '}
-              <h1>Instaclone App </h1>
-            </div>
-            <div className=' md:flex  items-center'>
-              <h1 className='text-xl'>Technologies used :</h1>
-              <div className='flex gap-2 flex-wrap mt-2 md:mt-0'>
-                <FaNodeJs className='text-green-700' />
-                <BiLogoJavascript className='text-yellow-400' />
-                <SiTailwindcss className='text-blue-700' />
-                <FaGithub className='text-black bg-white' />
-                <SiMongodb className='text-green-700' />
-                <SiMongoose className='text-red-700' />
-                <TbBrandReactNative className='text-blue-400' />
-                <TfiHtml5 />
-                <SiExpress />
-              </div>
-            </div>
+      <div className='w-full md:h-screen  flex justify-center items-center bg-stone-900 flex-col p-6'>
+        <h1 className='text-orange-400 text-4xl font-bold'>Skills</h1>
+        <div className=' w-full rounded flex  justify-center items-center mt-5'>
+          <div className='flex flex-wrap gap-4 justify-evenly'>
+            <FaNodeJs className='text-green-700 h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <BiLogoJavascript className='text-yellow-400 h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded  hover:bg-white ' />
+            <SiTailwindcss className='text-blue-700 h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded  hover:bg-white' />
+            <FaGithub className='text-black bg-white h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <SiMongodb className='text-green-700 h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <SiMongoose className='text-red-700 h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <TbBrandReactNative className='text-blue-400  h-40 w-40 border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <TfiHtml5 className='h-40 w-40 text-yellow-400  border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
+            <SiExpress className='h-40 w-40 text-yellow-400  border-[0.5px] border-orange-400 p-2 rounded hover:bg-white' />
           </div>
         </div>
       </div>
     </>
   );
 };
+
+{
+  /* <BiLogoJavascript className='text-yellow-400' />
+            <SiTailwindcss className='text-blue-700' />
+            <FaGithub className='text-black bg-white' />
+            <SiMongodb className='text-green-700' />
+            <SiMongoose className='text-red-700' />
+            <TbBrandReactNative className='text-blue-400' />
+            <TfiHtml5 />
+            <SiExpress /> */
+}
 
 export default Skill;

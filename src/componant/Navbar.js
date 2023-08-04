@@ -20,10 +20,12 @@ function Navbar(props) {
                   props.show();
                 }}
               >
-                Skills
+                Project
               </li>
             </Link>
-            <li className='cursor-pointer'>Project </li>
+            <Link to='/Project'>
+              <li className='cursor-pointer'>Skills </li>
+            </Link>
             <li
               className='relative cursor-pointer'
               onClick={() => {
